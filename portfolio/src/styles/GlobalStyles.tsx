@@ -11,9 +11,10 @@ const globalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
     body{
+        width: 100%;
         font-size: 1rem;
+        font-family: Helvetica;
         color: white;
-        padding-top: 100px;
         background-color: rgb(21,21,31);
     }
     input{
