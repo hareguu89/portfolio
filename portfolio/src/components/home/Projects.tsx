@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
 
 interface ProjectProps {
@@ -36,7 +36,12 @@ const Projects = ({
               {projectSub}
             </Intro_Main>
           </Intro_Header>
-          <Arrow src="/images/Arrow.png" alt="" onClick={handleShowUp} />
+          <Arrow
+            src="/images/home/Arrow.png"
+            alt=""
+            onClick={handleShowUp}
+            open={open}
+          />
         </Intro>
         {open ? (
           <ContentMain>
@@ -71,6 +76,7 @@ const ContentArticle = styled.div`
   align-items: center;
   gap: 25px;
   width: 350px;
+  font-weight: normal;
 `;
 
 const ContentImage = styled.img`
@@ -99,12 +105,13 @@ const Intro_Header = styled.div`
 const Intro_Main = styled.div`
   font-size: 14px;
 `;
-const Arrow = styled.img`
+const Arrow = styled.img<{ open: boolean }>`
   height: 20px;
   width: auto;
   align-self: center;
   cursor: pointer;
   justify-self: flex-end;
+  transform: rotate(${(props) => (!props.open ? '90' : '90deg')});
 `;
 const Intro = styled.div`
   display: flex;
@@ -115,6 +122,7 @@ const Intro = styled.div`
 `;
 
 const ProjectContainer = styled.div`
+  font-weight: bold;
   display: flex;
   border-radius: 12px;
   background: linear-gradient(to bottom, #ac7fd0, #99cfff);
@@ -124,6 +132,14 @@ const ProjectContainer = styled.div`
   width: 100%;
   flex-direction: column;
   //   height: 120px;
+`;
+
+const rotate = keyframes`
+  from {
+    transform : rotate(0deg);
+  }to {
+    transform : rotate(360deg);
+  }
 `;
 
 export default Projects;

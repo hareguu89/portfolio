@@ -36,6 +36,7 @@ const IntroContainer = styled.div`
 
 const IntroItem1 = styled.div`
   font-size: 44px;
+  font-weight: bold;
 `;
 
 const IntroItem2 = styled.div`

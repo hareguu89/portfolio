@@ -34,6 +34,11 @@ const FooterList = styled.li`
 const FooterItem = styled.a`
   font-size: 1rem;
   gap: 20px;
+  &: hover {
+    background: linear-gradient(to right, #ac7fd0, #99cfff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 `;
 
 const FooterContainer = styled.footer`
