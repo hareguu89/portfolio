@@ -1,5 +1,5 @@
 import React from 'react';
-import Tesla from '../components/Tesla';
+import Tesla from '../container/Tesla';
 import { withRouter } from 'react-router-dom';
 
 const TeslaPage = () => {

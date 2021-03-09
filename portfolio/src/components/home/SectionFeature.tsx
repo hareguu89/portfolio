@@ -7,30 +7,30 @@ const projects = [
     intro: '#HMI Research #WoZ',
     projectName: 'Tesla Take Over Request Experience Case Study',
     projectSub: 'based on Lv3 Autonomous Driving',
-    img: '/images/TeslaThumnail.png',
+    img: '/images/home/TeslaThumnail.png',
     article:
       'Interface Design Proposal With the goal of designing a safe driving experience, I suggest the driver variables according to the SAE lv3 automation guide and measure driving proficiency base situation awareness in planned control transitions during non-driving tasks.',
-    imgBtn: '/images/viewcasestudy_button.png',
+    imgBtn: '/images/home/viewcasestudy_button.png',
     path: '/tesla',
   },
   {
     intro: '#UX Research #AR #Camera',
     projectName: 'Yarra Trash Monsters',
     projectSub: ' Community-Driven AR Camera Service Design',
-    img: '/images/Yarra_thumbnail.png',
+    img: '/images/home/Yarra_thumbnail.png',
     article:
       'Interface Design Proposal With the goal of designing a safe driving experience, I suggest the driver variables according to the SAE lv3 automation guide and measure driving proficiency base situation awareness in planned control transitions during non-driving tasks.',
-    imgBtn: '/images/viewproject_button.png',
+    imgBtn: '/images/home/viewproject_button.png',
     path: '/yarratrashmonsters',
   },
   {
     intro: '#VUX #FGI #GoogleAction #Dialogflow',
     projectName: 'Louis',
     projectSub: 'Voice Enabled Chatbot for Visual Impaired',
-    img: '/images/TeslaThumnail.png',
+    img: '/images/home/TeslaThumnail.png',
     article:
       'Interface Design Proposal With the goal of designing a safe driving experience, I suggest the driver variables according to the SAE lv3 automation guide and measure driving proficiency base situation awareness in planned control transitions during non-driving tasks.',
-    imgBtn: '/images/viewproject_button.png',
+    imgBtn: '/images/home/viewproject_button.png',
     path: '/louis',
   },
 ];
@@ -70,6 +70,7 @@ const Features = styled.div`
 
 const Text = styled.div`
   font-size: 26px;
+  font-weight: bold;
 `;
 
 const FeatureContainer = styled.div`

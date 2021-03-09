@@ -1,5 +1,5 @@
 import React from 'react';
-import Louis from '../components/Louis';
+import Louis from '../container/Louis';
 import { withRouter } from 'react-router-dom';
 
 const LouisPage = () => {

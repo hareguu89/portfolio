@@ -6,7 +6,7 @@ const Header = (): JSX.Element => {
     <>
       <HeaderContainer>
         <Item>
-          <MainLogo src={'/images/MainLogo.png'}></MainLogo>
+          <MainLogo src={'/images/home/MainLogo.png'}></MainLogo>
           <Resume>resume</Resume>
         </Item>
       </HeaderContainer>
@@ -17,8 +17,6 @@ const Header = (): JSX.Element => {
 export default Header;
 
 const HeaderContainer = styled.header`
-  top: 0;
-  left: 0;
   width: 100%;
   height: 80px;
   padding-top: 40px;
